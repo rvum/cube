@@ -1,0 +1,92 @@
+* { padding: 0; margin: 0; }
+img{border:0;}
+li{list-style:none;}
+
+#cube3d{
+    width:312px;
+    margin:0 auto;
+    position:absolute;
+    right:100px;
+    top:300px;
+    transform-style:preserve-3d;
+    transform:rotateX(45deg) rotateY(45deg);
+    -webkit-transform-style:preserve-3d;
+    -webkit-transform:rotateX(45deg) rotateY(45deg);
+    /*-webkit-perspective:4000px;*/
+    /*-webkit-perspective-origin:0% 0%;*/
+}
+
+.sheet{
+    width:312px;
+    position:absolute;
+    transform-style:preserve-3d;
+    transform:rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style:preserve-3d;
+    -webkit-transform:rotateX(0deg) rotateY(0deg);
+}
+
+#sheet1{
+	-webkit-transform:translateZ(-104px);
+    transform:translateZ(-104px);
+
+}
+
+#sheet3{
+	-webkit-transform:translateZ(104px);
+    transform:translateZ(104px);
+}
+
+
+.sm_cube{
+    float:left;
+}
+
+ul{width:100px;height:100px;/*margin:100px auto;*/position:relative;
+    transform-style:preserve-3d;
+    transform:rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style:preserve-3d;
+    -webkit-transform:rotateX(0deg) rotateY(0deg);
+    margin:2px;
+    /*border:5px solid black;*/
+}
+li{width:100px;height:100px;position:absolute;text-align:center;
+    line-height:100px;font-size:40px;font-weight:bold;color:#fff;}
+
+li:nth-child(1){
+    background-color: red;
+    transform: translateZ(50px);
+    -webkit-transform: translateZ(50px);
+}
+li:nth-child(2){
+    background-color: #3F51B5;
+    transform:translateZ(-50px);
+    -webkit-transform:translateZ(-50px);
+}
+li:nth-child(3){
+    background-color: #9C27B0;
+    transform:rotateY(270deg)translateZ(50px);
+    -webkit-transform:rotateY(270deg)translateZ(50px);
+}
+li:nth-child(4){
+    background-color: #4CAF50;
+    transform:rotateY(90deg) translateZ(50px);
+    -webkit-transform:rotateY(90deg) translateZ(50px);
+}
+li:nth-child(5){
+    background-color: #FFC107;
+    transform:rotateX(90deg) translateZ(50px);
+    -webkit-transform:rotateX(90deg) translateZ(50px);
+}
+li:nth-child(6){
+    background-color: #607D8B;
+    transform:rotateX(270deg) translateZ(50px);
+    -webkit-transform:rotateX(270deg) translateZ(50px);
+}
+
+button{
+	font-size: 15px;
+	margin-top: 30px;
+	margin-left: 30px;
+	color:#309340;
+	font-weight: bold;
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>3D立方体</title>
+    <link type="text/css" rel="stylesheet" href="cube3d.css">
+</head>
+<body>
+<button id="whole">随机旋转整个魔方</button>
+<button id="oneSheet">随机旋转某一层</button>
+<button id="oneSmCube">随机旋转某一个魔方</button>
+<button id="reset">重置</button>
+<div id="cube3d">
+    <div class="sheet" id="sheet1">
+        <!--视线最深面开始-->
+        <div class="sm_cube">
+            <ul class="ul" id="111">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="311">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="511">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="131">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="331">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="531">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="151">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="351">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="551">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <!--视线最深面结束-->
+
+    </div>
+
+    <!-----------------------------------------------------分割线------------------------------------------------------>
+
+    <div class="sheet" id="sheet2">
+        <!--中间面开始-->
+        <div class="sm_cube" >
+            <ul class="ul" id="113">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="313">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="513">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="133">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="333">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="533">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="153">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="353">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="553">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <!--中间面结束-->
+
+    </div>
+
+    <!--------------------------------------------分割线--------------------------------------------------------------->
+
+    <div class="sheet" id="sheet3">
+        <!--最靠近视线面开始-->
+        <div class="sm_cube" >
+            <ul class="ul" id="115">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="315">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="515">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="135">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="335">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="535">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="155">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="355">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <div class="sm_cube">
+            <ul class="ul" id="555">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+
+        <!--最靠近视线面结束-->
+
+    </div>
+</div>
+<!--<script type="text/javascript">
+    var cube3d = document.getElementById("cube3d");
+    /*如果在ul里设置：-webkit-perspective:400px;
+    -webkit-perspective-origin:0% 50%; 则会有透视、景深的效果*/
+    cube3d.style.Transition = '-webkit-transform 3s linear';
+    cube3d.style.webkitTransition = '-webkit-transform 3s linear';
+    setInterval(cube,1000);
+    function cube(){
+        var x,y;
+        x=Math.random()*360;
+        y=Math.random()*360;
+//cube3d.style.webkitTransform = "rotateX(" + 45deg) rotateY(" + 70 + "deg)";
+        cube3d.style.Transform = "rotateX(" + x + "deg) rotateY(" + y+ "deg)";
+        cube3d.style.webkitTransform = "rotateX(" + x + "deg) rotateY(" + y+ "deg)";
+    }
+</script>-->
+<script src="cube3d.js"></script>
+</body>
+</html>
